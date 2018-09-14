@@ -1,0 +1,55 @@
+
+
+@import './mixins.scss';
+$color:green;
+.a{
+    color:$color;
+    
+    @include border;
+    .b{
+        color:darken($color,20);
+        @include border;
+    }
+}
+
+.nav{
+    height:100px;
+}
+.nav ul{
+    margin:0;
+}
+.nav ul li{
+    float:left;
+    list-style:none;
+    padding:5px;
+}
+.nav{
+    height:100px;
+    
+    ul{
+        margin:0;
+        
+        li{
+           float:left;
+           list-style:none;
+           padding:5px; 
+        }
+    }
+    
+}
+
+
+.nav{
+    height:100px;
+    a{
+        color:#fff;
+        &:hover{
+            color:red;
+        }
+    }
+}
+
+h1{
+    color:green;
+    background-color:red;
+}
