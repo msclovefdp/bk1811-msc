@@ -11,7 +11,7 @@ const config={
    },
    serveroptions:{
    		root: './dist',
-    	port: 8000,
+    	port: 8080,
     	livereload: true
    },
    pages:['fdp','index','list','msc','shopCar'],
